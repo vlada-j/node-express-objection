@@ -2,9 +2,13 @@
   "name": "express-objection",
   "version": "1.0.0",
   "description": "This is simple example project with express and objection.js",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "knex migrate:latest",
+    "start": "npm run migrate && node app"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
@@ -18,8 +22,17 @@
   ],
   "author": "vladajanosevic@gmail.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vlada-j/node-express-objection/issues"
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   },
-  "homepage": "https://github.com/vlada-j/node-express-objection#readme"
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "knex": "^0.19.4",
+    "objection": "^1.6.9",
+    "path": "^0.12.7",
+    "sqlite3": "^4.1.0"
+  }
 }
