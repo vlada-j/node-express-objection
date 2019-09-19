@@ -1,0 +1,25 @@
+{
+  "name": "express-objection",
+  "version": "1.0.0",
+  "description": "This is simple example project with express and objection.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlada-j/node-express-objection.git"
+  },
+  "keywords": [
+    "express",
+    "objection",
+    "server",
+    "database"
+  ],
+  "author": "vladajanosevic@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlada-j/node-express-objection/issues"
+  },
+  "homepage": "https://github.com/vlada-j/node-express-objection#readme"
+}
